@@ -12,10 +12,10 @@
     <!--js-->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/menu_scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!--bootstrap-->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 
     <!--css-->
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -39,63 +39,122 @@
 
     <header>
 
-        <div class="">
+        <div class="hd_all">
 
             <hgroup>
 
-                <h1><img src="img/nipperture_logo.png" alt="logo"></h1>
+                <h1><a href=""><img src="img/eCeltron_Logo_h.png" alt="logo"></a></h1>
 
             </hgroup>
 
 
-            <nav class="">
+            <nav class="pc_wrap">
                 <ul>
-
-                    <li><a href="" class="scroll"></a></li>
-                    <li><a href="" class="scroll"></a></li>
-                    <li><a href="" class="scroll"></a></li>
-                    <li><a href="" class="scroll"></a></li>
-                    <li><a href="" class="scroll"></a></li>
-
-                </ul>
-            </nav>
-
-
-            <!--반응형-->
-
-            <div class="">
-
-                <img src="img/nipperture_logo.png" alt="menu_button">
-
-            </div>
-
-            <nav class="">
-
-                <ul>
-
-                    <li><a href="" class="scroll"></a></li>
-                    <li><a href="" class="scroll"></a></li>
-                    <li><a href="" class="scroll"></a></li>
-                    <li><a href="" class="scroll"></a></li>
-                    <li><a href="" class="scroll"></a></li>
-
+                    <li><a href="#home" class="scroll">Home</a></li>
+                    <li><a href="#about01" class="scroll">About</a></li>
+                    <li><a href="#coin" class="scroll">eCeltron Coin
+                        </a></li>
+                    <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
+                    <li><a href="index.html" class="lan">Ko <img src="img/ko_icon.png" alt="eng_icon"></a></li>
                 </ul>
 
             </nav>
 
-            <!--반응형 js-->
-            <script type="text/javascript">
-                $(function () {
-                    $("").click(function () {
-                        $("").animate({ width: "toggle" }, 250);
-                    });
-                });
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><span></span></label>
+            <label for="active" class="close"></label>
 
-            </script>
+            <nav class="wrapper">
+
+                <ul>
+                    <li><a href="#home" class="scroll">Home</a></li>
+                    <li><a href="#about01" class="scroll">About</a></li>
+                    <li><a href="#coin" class="scroll">eCeltron Coin
+                        </a></li>
+                    <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
+                    <li><a href="index.html" class="lan">Ko <img src="img/ko_icon.png" alt="eng_icon"></a></li>
+
+                </ul>
+
+            </nav>
 
         </div>
 
     </header>
+
+    <main>
+        <section id="home">
+            <div class="main_vid">
+                <video autoplay="" muted="" loop="" playsinline="">
+                    <source src="video/eCeltron_main_vid.mp4" type="video/mp4">
+                  </video>
+            </div>
+            <div class="main_area container">
+                <h2>eCeltron</h2>
+                <div class="main_txt">
+                    <b>Revolutionizes the electric vehicle battery industry with Blockchain technology
+                    </b>
+                    <p>By applying the efficiency and transparency of blockchain to the <br>electric vehicle battery industry, unprecedented cost-efficiency, <br>process efficiency, and design automation can be achieved.<br>
+                        We will open a new world in the electric vehicle battery industry.
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="down">
+            <div class="down_area container">
+                <button>
+                    <a href="eCeltron whitepaper.Kor.pdf"><i class="xi-paper"></i> WhitePaper</a>                 
+                </button>
+                <button><a href=""><i class="xi-wallet"></i> Wallet</a></button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="con_area container">
+                <h3>Contact Us</h3>
+                <div class="con_txt_area">
+                    <div class="con_txt_left">
+                        <h4>Ask for a quotation from us !</h4>
+                        <form class="gform" action="" data-email="" method="">
+                            <input type="email" value placeholder="E-mail" class="email" required style="color:#2CFEB9;">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <input type="submit" value="SEND" class="send">
+                        </form>
+                    </div>
+                    <div class="con_txt_right">
+                        <ul class="info">Contact Infomation :
+                            <li><i class="xi-profile"></i> </li>
+                            <li><i class="xi-mobile"></i> </li>
+                            <li><i class="xi-building"></i> </li>
+                        </ul>
+                    
+                        <div class="sns">
+                            Follow Us :
+                            <div class="sns_icon">
+                                <a href=""><i class="xi-telegram"></i></a>
+                                <a href=""><i class="xi-kakaotalk"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <div class="footer_area container">
+         <div class="footer_f"> <h1><img src="img/eCeltron_Logo_f.png" alt="logo"></h1></div>
+         <div class="footer_w">
+             <h4>WhitePaper |</h4>
+             <button><a href="eCeltron whitepaper.Kor.pdf"><img src="img/ko_icon.png" alt="ko">whitepaper_ko</a></button>
+             <button><a href="eCeltron whitepaper.Eng.pdf"><img src="img/eng_icon.png" alt="ko">whitepaper_Eng</a></button>
+         </div>
+       </div>
+       
+    </footer>
 
 
 
