@@ -88,7 +88,7 @@
             <div class="main_vid">
                 <video autoplay="" muted="" loop="" playsinline="">
                     <source src="video/eCeltron_main_vid.mp4" type="video/mp4">
-                  </video>
+                </video>
             </div>
             <div class="main_area container">
                 <h2>eCeltron</h2>
@@ -104,9 +104,126 @@
         <section id="down">
             <div class="down_area container">
                 <button>
-                    <a href="eCeltron whitepaper.Kor.pdf"><i class="xi-paper"></i> WhitePaper</a>                 
+                    <a href="eCeltron whitepaper.Kor.pdf"><i class="xi-paper"></i> WhitePaper</a>
                 </button>
                 <button class="btn_wallet"><a href=""><i class="xi-wallet"></i> Wallet</a></button>
+            </div>
+        </section>
+
+        <section id="coin">
+            <div class="coin_area container">
+                <h3>이셀트론 (eCeltron) Coin <br>
+                    자금배분계획
+                </h3>
+
+                <div class="chart_area">
+                    <div class="chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                    <div class="chart_data">
+                        <ul>
+                            <li><span></span>Coin sales 20%</li>
+                            <li><span></span>Development for Battery Material
+                                20%</li>
+                            <li><span></span>M&A of Battery material development
+                                and manufacturing lines
+                                20%</li>
+                            <li><span></span>Global marketing 10%</li>
+                            <li><span></span>Legal Advisory 20%</li>
+                            <li><span></span>Team
+                                10%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chart_txt">
+                    <ul>
+                        <li><b>Coin Name :</b> eCeltron</li>
+                        <li><b>Symbol :</b> ECTR </li>
+                        <li><b>Protocol :</b> ERC20</li>
+                        <li><b>Total Supply :</b> 150,000,000</li>
+                    </ul>
+                </div>
+
+
+                <script>
+                    const data = {
+
+                        // labels: [
+                        //     'Coin sales',
+                        //     'Development for Battery Material',
+                        //     'M&A of Battery material development and manufacturing lines',
+                        //     'Global marketing',
+                        //     'Legal Advisory',
+                        //     'Team',
+
+                        // ],
+                        // display: ['none']
+                        // ,
+
+                        datasets: [{
+                            label: 'My First Dataset',
+                            data: [20, 20, 20, 10, 20, 10],
+                            backgroundColor: [
+                                '#018383',
+                                '#02A8A8',
+                                '#42E6A4',
+                                '#00FFAB',
+                                '#14C38E',
+                                '#B8F1B0',
+                            ],
+                            hoverOffset: 4
+                        }]
+                    };
+
+                    const config = {
+                        type: 'doughnut',
+                        data: data,
+                    };
+                </script>
+
+                <script>
+                    const myChart = new Chart(
+                        document.getElementById('myChart'),
+                        config
+                    );
+                </script>
+
+
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <div class="roadmap_area container">
+                <h3>Roadmap</h3>
+                <div class="road_box">
+                    <div class="box fi">
+                        <h4>2021</h4>
+                        <ul>
+                            <li><b>Q3</b><br>eCeltron 설립</li>
+                            <li><b>Q4</b><br>사업백서 완료</li>
+                        </ul>
+                    </div>
+                    <div class="box se">
+                        <h4>2022</h4>
+                        <ul>
+                            <li><b>Q1</b><br>eCeltron 플랫폼 및 지갑 개발 개시</li>
+                            <li><b>Q2</b><br>eCeltron 배터리 신소재 개발사 선정시작</li>
+                            <li><b>Q3</b><br>eCeltron 글로벌상위권 거래소 상장 및 지갑 출시</li>
+                            <li><b>Q4</b><br>eCeltron 중국지역 배터리 생산 라인 실사 착수</li>
+                        </ul>
+                    </div>
+                    <div class="box th">
+                        <h4>2023</h4>
+                        <ul>
+                            <li><b>Q1</b><br>아시아 지역 및 북미 상위권 거래소 상장 확대
+                            </li>
+                            <li><b>Q2</b><br>eCeltron 플랫폼 출시</li>
+                            <li><b>Q3</b><br>eCeltron 완성차 제조 기업 파트너쉽 완료</li>
+                            <li><b>Q4</b><br>eCeltron 플랫폼 고도화 작업 </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -117,7 +234,8 @@
                     <div class="con_txt_left">
                         <h4>Ask for a quotation from us !</h4>
                         <form class="gform" action="" data-email="" method="">
-                            <input type="email" value placeholder="E-mail" class="email" required style="color:#2CFEB9;">
+                            <input type="email" value placeholder="E-mail" class="email" required
+                                style="color:#2CFEB9;">
                             <textarea name="message" id="message" placeholder="Message"></textarea>
                             <input type="submit" value="SEND" class="send">
                         </form>
@@ -128,7 +246,7 @@
                             <li><i class="xi-mobile"></i> </li>
                             <li><i class="xi-building"></i> </li>
                         </ul>
-                    
+
                         <div class="sns">
                             Follow Us :
                             <div class="sns_icon">
@@ -143,15 +261,19 @@
     </main>
 
     <footer>
-       <div class="footer_area container">
-         <div class="footer_f"> <h1><img src="img/eCeltron_Logo_f.png" alt="logo"></h1></div>
-         <div class="footer_w">
-             <h4>WhitePaper |</h4>
-             <button><a href="eCeltron whitepaper.Kor.pdf"><img src="img/ko_icon.png" alt="ko">whitepaper_ko</a></button>
-             <button><a href="eCeltron whitepaper.Eng.pdf"><img src="img/eng_icon.png" alt="ko">whitepaper_Eng</a></button>
-         </div>
-       </div>
-       
+        <div class="footer_area container">
+            <div class="footer_f">
+                <h1><img src="img/eCeltron_Logo_f.png" alt="logo"></h1>
+            </div>
+            <div class="footer_w">
+                <h4>WhitePaper |</h4>
+                <button><a href="eCeltron whitepaper.Kor.pdf"><img src="img/ko_icon.png"
+                            alt="ko">whitepaper_ko</a></button>
+                <button><a href="eCeltron whitepaper.Eng.pdf"><img src="img/eng_icon.png"
+                            alt="ko">whitepaper_Eng</a></button>
+            </div>
+        </div>
+
     </footer>
 
 
