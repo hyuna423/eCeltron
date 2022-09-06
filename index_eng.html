@@ -108,9 +108,131 @@
                 <button>
                     <a href="eCeltron whitepaper.Kor.pdf"><i class="xi-paper"></i> WhitePaper</a>                 
                 </button>
-                <button><a href=""><i class="xi-wallet"></i> Wallet</a></button>
+                <button class="btn_wallet"><a href=""><i class="xi-wallet"></i> Wallet</a></button>
             </div>
         </section>
+
+
+
+        
+        <section id="coin">
+            <div class="coin_area container">
+                <h3>eCeltron Token <br>Distribution Plan
+                </h3>
+
+                <div class="chart_area">
+                    <div class="chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                    <div class="chart_data">
+                        <ul>
+                            <li><span></span>Coin sales 20%</li>
+                            <li><span></span>Development for Battery Material
+                                20%</li>
+                            <li><span></span>M&A of Battery material development
+                                and manufacturing lines
+                                20%</li>
+                            <li><span></span>Global marketing 10%</li>
+                            <li><span></span>Legal Advisory 20%</li>
+                            <li><span></span>Team
+                                10%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chart_txt">
+                    <ul>
+                        <li><b>Coin Name :</b> eCeltron</li>
+                        <li><b>Symbol :</b> ECTR </li>
+                        <li><b>Protocol :</b> ERC20</li>
+                        <li><b>Total Supply :</b> 150,000,000</li>
+                    </ul>
+                </div>
+
+
+                <script>
+                    const data = {
+
+                        // labels: [
+                        //     'Coin sales',
+                        //     'Development for Battery Material',
+                        //     'M&A of Battery material development and manufacturing lines',
+                        //     'Global marketing',
+                        //     'Legal Advisory',
+                        //     'Team',
+
+                        // ],
+                        // display: ['none']
+                        // ,
+
+                        datasets: [{
+                            label: 'My First Dataset',
+                            data: [20, 20, 20, 10, 20, 10],
+                            backgroundColor: [
+                                '#018383',
+                                '#02A8A8',
+                                '#42E6A4',
+                                '#00FFAB',
+                                '#14C38E',
+                                '#B8F1B0',
+                            ],
+                            hoverOffset: 4
+                        }]
+                    };
+
+                    const config = {
+                        type: 'doughnut',
+                        data: data,
+                    };
+                </script>
+
+                <script>
+                    const myChart = new Chart(
+                        document.getElementById('myChart'),
+                        config
+                    );
+                </script>
+
+
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <div class="roadmap_area container">
+                <h3>Roadmap</h3>
+                <div class="road_box">
+                    <div class="box fi">
+                        <h4>2021</h4>
+                        <ul>
+                            <li><b>Q3</b><br>eCeltron foundation set up
+                            </li>
+                            <li><b>Q4</b><br>Whitepaper published</li>
+                        </ul>
+                    </div>
+                    <div class="box se">
+                        <h4>2022</h4>
+                        <ul>
+                            <li><b>Q1</b><br>eCeltron Platform & Wallet development started</li>
+                            <li><b>Q2</b><br>Selecting material developing companies started</li>
+                            <li><b>Q3</b><br>Listing on top global exchanges & Wallet launched
+                            </li>
+                            <li><b>Q4</b><br>Battery manufacturing line in China due diligence</li>
+                        </ul>
+                    </div>
+                    <div class="box th">
+                        <h4>2023</h4>
+                        <ul>
+                            <li><b>Q1</b><br>Listing on more global exchanges in Asia or U.S.
+                            </li>
+                            <li><b>Q2</b><br>eCeltron platform launching</li>
+                            <li><b>Q3</b><br>Finished car manufacturer partnership completed</li>
+                            <li><b>Q4</b><br>eCeltron  platform enhancement </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section id="contact">
             <div class="con_area container">

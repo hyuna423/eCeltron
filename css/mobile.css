@@ -187,6 +187,14 @@
     height: 350px;
   }
 
+  #coin .coin_area h3 {
+    margin-left: 20px;
+}
+
+#coin .coin_area h3::after {
+  left: -6%;
+}
+
 
   #contact .con_area .con_txt_area {
     flex-direction: column;

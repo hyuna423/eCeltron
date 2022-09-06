@@ -3,3 +3,42 @@
     address{font-style:normal;}
 
 
+    #roadmap .roadmap_area .road_box .box {
+
+        padding: 0 10px;
+    }
+
+    @media screen and (max-width: 1440px){
+#roadmap .roadmap_area .road_box .box {
+    width: 347px;
+    height: 550px;
+    padding: 0 2%;
+}
+
+    }
+
+    @media screen and (max-width: 1024px){
+
+ #roadmap .roadmap_area .road_box .box {
+        width: 294px;
+        height: 550px;
+        padding: 0 2%;
+    }
+
+    } 
+   
+
+    @media screen and (max-width: 991px){
+        #roadmap .roadmap_area .road_box .box {
+    width: 90%;
+    height: 500px;
+    margin-bottom: 10%;
+}
+    }
+
+    @media screen and (max-width: 767px){
+        #roadmap .roadmap_area .road_box .box {
+    height: 400px;
+}
+    }
+
