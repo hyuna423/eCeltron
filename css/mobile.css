@@ -1,18 +1,73 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  #down .down_area button {
+    width: 30%;}
+    #home .main_vid video {
+      height: 100%;
+      width: auto;
+      left: -20%;
+  }
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
+    #home .main_vid video {
+      left: -90%;
+  }
+
+  #home .main_area {
+    top: 62%;
+    width: 85%;
+  }
+
+  .hd_all .pc_wrap {
+    display:none;
+}
+.hd_all .menu-btn {
+  display: block;
+}
+
+#contact .con_txt_area .con_txt_left form input.email, #contact .con_area .con_txt_left form textarea#message {
+  width: 80%;
+}
+
+#contact {
+  height: 50vh;
+}
+
+#contact .con_area {
+  height: 80%;
+}
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+
+    #home .main_area {
+      top: 50%;
+    }
+
+    #home .main_area .main_txt b {
+      font-size: 1.5rem;
+  }
+
+  #home .main_area .main_txt p {
+    font-size: 1rem;
+}
+
+#down .down_area button {
+  width: 40%;
+}
+
+#contact {
+  height: 60vh;
+}
 }
 
 
@@ -21,6 +76,22 @@
 
 @media screen and (max-width:767px) {
 
+  #home .main_vid video {
+    left: -54%;
+}
+
+  #home .main_area h2 {
+    font-size: 5rem;
+  }
+
+  #home .main_area {
+    height: 40%;
+  }
+
+  footer .footer_area {
+    flex-direction: column;
+}
+
 }
 
 
@@ -28,6 +99,71 @@
 
 
 @media screen and (max-width:576px) {
+  #home .main_vid video {
+    left: -113%;
+}
+  
+  #home .main_area .main_txt b {
+    font-size: 1.2rem;
+}
+
+#home .main_area .main_txt p br{
+  display: none;
+}
+
+  #down .down_area {
+    flex-direction: column;
+}
+
+#down .down_area button {
+  width: 80%;
+}
+
+#down .down_area button.btn_wallet{
+  margin-top: 5%;
+}
+
+
+#contact .con_area .con_txt_area {
+  flex-direction: column;
+}
+
+#contact {
+  height: 100vh;
+}
+
+#contact .con_area {
+  height: 90%;
+}
+
+#contact .con_area .con_txt_left {
+  width: 100%;
+  height: 45%;
+}
+
+#contact .con_txt_area .con_txt_left form input.email, #contact .con_area .con_txt_left form textarea#message {
+  width: 100%;
+}
+
+#contact .con_area .con_txt_right {
+  width: 100%;
+  line-height: 2;
+  height: 50%;
+}
+
+footer .footer_area .footer_w{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer_area .footer_w button {
+  margin-right: 0;
+}
+
+footer .footer_area .footer_w:last-child button{
+  margin-top: 5%;
+}
 
 }
 
@@ -36,6 +172,15 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
+    #home .main_area h2 {
+      font-size: 4rem;
+  }
+
+  #contact .con_area .con_txt_right ul.info i {
+    padding-right: 10px;
+    font-size: 2rem;
+    line-height: 1.5;
+}
 
 }
 
