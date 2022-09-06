@@ -1,22 +1,28 @@
-
 /*데탑*/
 @media screen and (max-width:1440px) {
   #down .down_area button {
-    width: 30%;}
-    #home .main_vid video {
-      height: 100%;
-      width: auto;
-      left: -20%;
+    width: 30%;
+  }
+
+  #home .main_vid video {
+    height: 100%;
+    width: auto;
+    left: -20%;
+  }
+
+  #roadmap .roadmap_area .road_box .box {
+    width: 360px;
+    height: 380px;
   }
 }
 
 
 
 /*노트북*/
-  @media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
 
-    #home .main_vid video {
-      left: -90%;
+  #home .main_vid video {
+    left: -90%;
   }
 
   #home .main_area {
@@ -25,49 +31,90 @@
   }
 
   .hd_all .pc_wrap {
-    display:none;
+    display: none;
+  }
+
+  .hd_all .menu-btn {
+    display: block;
+  }
+
+  #roadmap .roadmap_area .road_box .box {
+    width: 300px;
+    height: 400px;
+  }
+
+  #contact .con_txt_area .con_txt_left form input.email,
+  #contact .con_area .con_txt_left form textarea#message {
+    width: 80%;
+  }
+
+  #contact {
+    height: 50vh;
+  }
+
+  #contact .con_area {
+    height: 80%;
+  }
 }
-.hd_all .menu-btn {
-  display: block;
-}
-
-#contact .con_txt_area .con_txt_left form input.email, #contact .con_area .con_txt_left form textarea#message {
-  width: 80%;
-}
-
-#contact {
-  height: 50vh;
-}
-
-#contact .con_area {
-  height: 80%;
-}
-}
 
 
 
-  /*아이패드 (768px)*/
-  @media screen and (max-width:991px) {
+/*아이패드 (768px)*/
+@media screen and (max-width:991px) {
 
-    #home .main_area {
-      top: 50%;
-    }
+  #home .main_area {
+    top: 50%;
+  }
 
-    #home .main_area .main_txt b {
-      font-size: 1.5rem;
+  #home .main_area .main_txt b {
+    font-size: 1.5rem;
   }
 
   #home .main_area .main_txt p {
     font-size: 1rem;
-}
+  }
 
-#down .down_area button {
-  width: 40%;
-}
+  #down .down_area button {
+    width: 40%;
+  }
 
-#contact {
-  height: 60vh;
-}
+  #coin .coin_area .chart_txt {
+    width: 100%;
+  }
+
+  #coin .coin_area .chart_area {
+    flex-direction: column;
+  }
+
+  #coin .coin_area .chart_txt ul li {
+    text-align: center;
+  }
+
+  #coin .coin_area .chart_data {
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  #roadmap .roadmap_area .road_box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15% 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  #roadmap .roadmap_area .road_box .box {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10%;
+  }
+
+  #contact {
+    height: 60vh;
+  }
 }
 
 
@@ -78,7 +125,7 @@
 
   #home .main_vid video {
     left: -54%;
-}
+  }
 
   #home .main_area h2 {
     font-size: 5rem;
@@ -90,7 +137,11 @@
 
   footer .footer_area {
     flex-direction: column;
-}
+  }
+
+  #coin .coin_area div.chart {
+    width: 80%;
+  }
 
 }
 
@@ -99,71 +150,85 @@
 
 
 @media screen and (max-width:576px) {
+
+  h3 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #2DF7B6;
+  }
+
   #home .main_vid video {
     left: -113%;
-}
-  
+  }
+
   #home .main_area .main_txt b {
     font-size: 1.2rem;
-}
+  }
 
-#home .main_area .main_txt p br{
-  display: none;
-}
+  #home .main_area .main_txt p br {
+    display: none;
+  }
 
   #down .down_area {
     flex-direction: column;
-}
+  }
 
-#down .down_area button {
-  width: 80%;
-}
+  #down .down_area button {
+    width: 80%;
+  }
 
-#down .down_area button.btn_wallet{
-  margin-top: 5%;
-}
+  #down .down_area button.btn_wallet {
+    margin-top: 5%;
+  }
+
+  #roadmap .roadmap_area .road_box .box {
+    width: 90%;
+    height: 350px;
+  }
 
 
-#contact .con_area .con_txt_area {
-  flex-direction: column;
-}
+  #contact .con_area .con_txt_area {
+    flex-direction: column;
+  }
 
-#contact {
-  height: 100vh;
-}
+  #contact {
+    height: 100vh;
+  }
 
-#contact .con_area {
-  height: 90%;
-}
+  #contact .con_area {
+    height: 90%;
+  }
 
-#contact .con_area .con_txt_left {
-  width: 100%;
-  height: 45%;
-}
+  #contact .con_area .con_txt_left {
+    width: 100%;
+    height: 45%;
+  }
 
-#contact .con_txt_area .con_txt_left form input.email, #contact .con_area .con_txt_left form textarea#message {
-  width: 100%;
-}
+  #contact .con_txt_area .con_txt_left form input.email,
+  #contact .con_area .con_txt_left form textarea#message {
+    width: 100%;
+  }
 
-#contact .con_area .con_txt_right {
-  width: 100%;
-  line-height: 2;
-  height: 50%;
-}
+  #contact .con_area .con_txt_right {
+    width: 100%;
+    line-height: 2;
+    height: 50%;
+  }
 
-footer .footer_area .footer_w{
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-}
+  footer .footer_area .footer_w {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
 
-footer .footer_area .footer_w button {
-  margin-right: 0;
-}
+  footer .footer_area .footer_w button {
+    margin-right: 0;
+  }
 
-footer .footer_area .footer_w:last-child button{
-  margin-top: 5%;
-}
+  footer .footer_area .footer_w:last-child button {
+    margin-top: 5%;
+  }
 
 }
 
@@ -171,22 +236,35 @@ footer .footer_area .footer_w:last-child button{
 
 /*모바일3 갤럭시*/
 
-  @media screen and (max-width:425px) {
-    #home .main_area h2 {
-      font-size: 4rem;
+@media screen and (max-width:425px) {
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #home .main_area h2 {
+    font-size: 4rem;
   }
 
   #contact .con_area .con_txt_right ul.info i {
     padding-right: 10px;
     font-size: 2rem;
     line-height: 1.5;
-}
+  }
+
+  #coin .coin_area .chart_data ul li span {
+    content: "";
+    width: 20px;
+    height: 20px;
+
+  }
+
+  #roadmap .roadmap_area .road_box .box ul li {
+    font-size: .8rem;
+  }
 
 }
 
 
 
 /*모바일4 아이폰*/
-    @media screen and (max-width:375px) {
-
-}
+@media screen and (max-width:375px) {}
