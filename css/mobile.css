@@ -95,6 +95,11 @@
     margin-top: 5%;
   }
 
+  #roadmap::before {
+    position: absolute;
+    top: -250px;
+  }
+
   #roadmap .roadmap_area .road_box {
     display: flex;
     width: 100%;
@@ -115,6 +120,13 @@
   #contact {
     height: 60vh;
   }
+  
+  #contact .con_area .con_txt_right ul.info li{
+    font-size: 12px;
+  }
+
+
+
 }
 
 
@@ -142,6 +154,7 @@
   #coin .coin_area div.chart {
     width: 80%;
   }
+
 
 }
 

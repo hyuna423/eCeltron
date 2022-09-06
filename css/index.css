@@ -484,7 +484,7 @@ input[type="checkbox"] {
   top: 50%;
   left: 50%;
   transform:translate(-50%, -50%);
-  background: url(../img/coin_bg.png) no-repeat;
+  background: url(../img/coin_bg.png) no-repeat center;
 }
 
 #coin .coin_area{
@@ -824,6 +824,8 @@ input[type="checkbox"] {
 #contact .con_area .con_txt_right ul.info li{
   font-weight: 200;
   font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
 #contact .con_area .con_txt_right ul.info i{
   padding-right: 10px;
