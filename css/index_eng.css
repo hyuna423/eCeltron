@@ -2,43 +2,52 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
+    @media screen and (max-width:1024px){
 
-    #roadmap .roadmap_area .road_box .box {
 
-        padding: 0 10px;
+        .intro3_contents_wrap .intro3_box{
+            font-size: 0.8em;
+        }
+
+        .intro3_box2{
+            padding-bottom: 7% !important;
+        }
+
+        .intro3_box3{
+            padding-bottom: 13% !important;
+        }
+    
+        .intro3_box4{
+            padding-bottom: 8% !important;
+        }
     }
 
-    @media screen and (max-width: 1440px){
-#roadmap .roadmap_area .road_box .box {
-    width: 347px;
-    height: 550px;
-    padding: 0 2%;
-}
+    @media screen and (max-width:991px){
+        .intro3_contents_wrap .intro3_box{
+            font-size: 1em;
+        }
+    }
+
+
+    @media screen and (max-width:767px){
+        .intro1_txt br{
+            display: none;
+        }
+
+        
+    }
+
+    @media screen and (max-width:425px) {
+        .intro3_contents_wrap .intro3_box p br{
+            display: none;
+        }
+
+        .eng_br{
+            display: block !important;
+        }
 
     }
 
-    @media screen and (max-width: 1024px){
-
- #roadmap .roadmap_area .road_box .box {
-        width: 294px;
-        height: 550px;
-        padding: 0 2%;
+    @media screen and (max-width:375px) {
+       
     }
-
-    } 
-   
-
-    @media screen and (max-width: 991px){
-        #roadmap .roadmap_area .road_box .box {
-    width: 90%;
-    height: 500px;
-    margin-bottom: 10%;
-}
-    }
-
-    @media screen and (max-width: 767px){
-        #roadmap .roadmap_area .road_box .box {
-    height: 400px;
-}
-    }
-
