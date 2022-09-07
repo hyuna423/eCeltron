@@ -1004,11 +1004,13 @@ input[type="checkbox"] {
 
 #roadmap .roadmap_area .road_box .box ul li {
   line-height: 2;
+  font-weight: 100;
 }
 
 #roadmap .roadmap_area .road_box .box ul li b {
   color: #2CFEB9;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 #roadmap .roadmap_area .road_box .box.fi {
