@@ -12,6 +12,10 @@ address {
     font-style: normal;
 }
 
+.intro3_contents_wrap .intro3_box {
+    width: 22%;
+    height: 400px;
+}
 
 #roadmap .roadmap_area .road_box .box {
 
@@ -53,7 +57,13 @@ address {
 
 }
 
+@media screen and (max-width: 1024px) {
 
+.intro3_contents_wrap .intro3_box {
+    height: 280px;
+}
+
+}
 @media screen and (max-width: 991px) {
     #roadmap .roadmap_area .road_box .box {
         width: 90%;
@@ -64,6 +74,12 @@ address {
     .intro3_contents_wrap .intro3_box {
         font-size: 1em;
     }
+
+    .intro3_contents_wrap .intro3_box {
+        width: 65%;
+        height: 360px;
+    }
+
 }
 
 @media screen and (max-width: 767px) {

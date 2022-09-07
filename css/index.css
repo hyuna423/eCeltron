@@ -665,15 +665,17 @@ input[type="checkbox"] {
   margin-top: 5%;
 }
 
+.intro2_wrap h4,
+.intro2_wrap p {
+  color: #fff;
+  font-weight: 100;
+}
+
 .intro2_wrap h4 {
   font-weight: bold;
   margin-bottom: 3%;
 }
 
-.intro2_wrap h4,
-.intro2_wrap p {
-  color: #fff;
-}
 
 .intro2_img_pc,
 .intro2_img_m {
@@ -795,6 +797,7 @@ input[type="checkbox"] {
 
 .intro3_box p {
   font-size: 0.9em;
+  font-weight: 100;
 }
 
 /* coin */
@@ -920,6 +923,11 @@ input[type="checkbox"] {
   width: 50%;
   line-height: 2;
   font-size: 1.2em;
+  font-weight: 100;
+}
+
+#coin .coin_area .chart_txt ul li b{
+  font-weight: bold;
 }
 
 #coin .coin_area .chart_txt ul li br.dis{
